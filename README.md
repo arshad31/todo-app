@@ -20,4 +20,9 @@ A simple Todo application built with **HTML**, **CSS**, and **Vanilla JavaScript
 - Node.js (To check node.js instaled in computer write "node -v" in command line)
 - If not pre installed you can download and install Node.js from: https://nodejs.org
 
+## Sample Output Screenshot
+
+![Todo List Output](todo-output-1.png)
+![Todo List Output](todo-output-2.png)
+
 

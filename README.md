@@ -22,7 +22,7 @@ A simple Todo application built with **HTML**, **CSS**, and **Vanilla JavaScript
 
 ## Sample Output Screenshot
 
-![Todo List Output](todo-output-1.png)
-![Todo List Output](todo-output-2.png)
+![Todo List Output](todo-output-1.PNG)
+![Todo List Output](todo-output-2.PNG)
 
 

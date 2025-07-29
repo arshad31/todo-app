@@ -8,8 +8,16 @@ function renderTodos() {
   todoList.innerHTML = '';
   todos.forEach((todo, index) => {
     const li = document.createElement('li');
-    li.className = "list-group-item d-flex justify-content-between align-items-center ";
+    li.className = "list-group-item d-flex justify-content-between align-items-center";
     li.textContent = todo;
+
+    const updateBtn = document.createElement("button");
+    updateBtn.className = "btn btn-success btn-sm me-2";
+    updateBtn.textContent = "Update";
+
+    updateBtn.addEventListener("click", () => {
+      updateTodo(index);
+    });
 
     const deleteBtn = document.createElement("button");
     deleteBtn.className = "btn btn-danger btn-sm";
@@ -19,15 +27,12 @@ function renderTodos() {
       deleteTodo(index);
     });
 
+    li.appendChild(updateBtn);
     li.appendChild(deleteBtn);
     todoList.appendChild(li);
-	
-	const updateBtn = document.createElement("button");
-    updateBtn.className = "btn btn-success btn-sm me-2";
-    updateBtn.textContent = "Update";
-
   });
 }
+
 
 function addTodo(todoText) {
   if (todoText.trim() === '') return;
@@ -46,4 +51,11 @@ function deleteTodo(index) {
   todos.splice(index, 1);
   renderTodos();
 }
+
+function updateTodo(index) {
+  const updatedText = prompt("Update todo:", todos[index]);
+    todos[index] = updatedText.trim();
+    renderTodos();
+}
+
 

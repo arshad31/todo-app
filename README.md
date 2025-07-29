@@ -9,12 +9,6 @@ A simple Todo application built with **HTML**, **CSS**, and **Vanilla JavaScript
 - **Render Todos:** The list updates automatically after adding current todo.
 - **Update Todos:** Edit existing todos.
 
-## Demo Screenshot
-
-![Todo App Screenshot](./screenshot.png)
-
-*(Add your app screenshot in the project root as `screenshot.png`)*
-
 ## How to Run
 
 1. Clone or download this repository.
@@ -25,3 +19,5 @@ A simple Todo application built with **HTML**, **CSS**, and **Vanilla JavaScript
 
 - Node.js (To check node.js instaled in computer write "node -v" in command line)
 - If not pre installed you can download and install Node.js from: https://nodejs.org
+
+
